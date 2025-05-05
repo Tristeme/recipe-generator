@@ -1,12 +1,38 @@
-# React + Vite
+# 🧠 GPT-4o Recipe Generator 🍳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web app that generates a recipe using **OpenAI GPT-4o**, based on a list of ingredients you provide.
 
-Currently, two official plugins are available:
+![App Screenshot](./src/assets/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔍 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Add ingredients interactively
+- ✅ Generate a complete recipe using GPT-4o
+- ✅ Live loading state & smooth UI
+- ✅ Component-based structure with React Hooks
+
+---
+
+## 🚀 Technologies Used
+
+- React (Vite)
+- OpenAI API (GPT-4o)
+- CSS Modules / Custom styles
+
+---
+
+## 🧪 How to Run
+
+1. Install dependencies:
+   ```bash
+   npm install
+2. Create a .env file and add your OpenAI API key:
+   ```bash
+   VITE_API_HOST=openai
+   VITE_API_DOMAIN=default
+   VITE_OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxs
+3. Start the app:
+    ```bash
+    npm run dev 

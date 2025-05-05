@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90vw;
+  max-width: 800px;
+  margin: 100px auto;
+  background: white;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.get-recipe-container {
+  background-color: #f6f5f3;
+  padding: 16px 24px;
+  margin-top: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get-recipe-container h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.get-recipe-container p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.get-recipe-container button {
+  background-color: #c46b46;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.get-recipe-container button:hover {
+  background-color: #aa5535;
+}

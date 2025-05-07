@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import './App.css'
 
@@ -12,6 +12,8 @@ function App() {
   const [recipe, setRecipe] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const recipeSection = useRef(null);
+
   // use onSubmit
   // function handleSubmit(event) {
   //   event.preventDefault();
@@ -22,6 +24,18 @@ function App() {
   //     event.currentTarget.reset(); // clear input
   //   }
   // }
+
+  useEffect(() => {
+    if (recipe != "" && recipeSection.current != null) {
+      // recipeSection.current.scrollIntoView()
+      const yCoord = recipeSection.current.getBoundingClientRect().top;
+      window.scroll({
+        top: yCoord,
+        behavior: "smooth"
+      })
+    }
+  }, [recipe])
+
   function addIngredient(formData) {
     const newIngredient = formData.get("ingredient").trim();
     setIngredients([...ingredients, newIngredient]);
@@ -83,7 +97,7 @@ function App() {
       </form>
       
       { ingredientsListItems.length > 0 && 
-      <IngredientsList ingredientsListItems={ingredientsListItems} showRecipe={showRecipe}/>}
+      <IngredientsList ref={recipeSection} ingredientsListItems={ingredientsListItems} showRecipe={showRecipe}/>}
 
       {recipeShown && <Recipe recipe={recipe} loading={loading} />}
     </div>

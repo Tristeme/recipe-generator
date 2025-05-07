@@ -8,7 +8,7 @@ export default function Recipe({ recipe, loading }) {
           {!loading && recipe && (
             <>
               <strong>Recipe Suggestion:</strong>
-              <p><ReactMarkdown>{recipe}</ReactMarkdown></p>
+              <ReactMarkdown>{recipe}</ReactMarkdown>
             </>
           )}
           {!loading && !recipe && (
